@@ -28,3 +28,12 @@ Daily automated releases. No recent security patches visible.
 developers.cloudflare.com: Access-Control-Allow-Origin: * (CORS wildcard)
 www.cloudflare.com: Well-known endpoints exposed (.well-known/agents.json, webmcp.json, openapi.json, llms.txt)
 All targets: Strong HSTS, proper CSP, Cloudflare-protected
+
+=== Aggressive Testing (June 29) ===
+CORS tests: 3 findings (intentional)
+Open redirects: 7 false positives
+Exposed files: 28 probes, 0 real exposures
+.git/HEAD: 0 exposed
+API endpoints: 8 probes, 0 new findings
+GitHub secrets: 0 found
+Result: No exploitable vulnerabilities found
