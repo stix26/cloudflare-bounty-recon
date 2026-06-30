@@ -1,0 +1,29 @@
+# Cloudflare In-Scope Targets
+# Source: HackerOne structured scopes
+
+# Primary
+dash.cloudflare.com
+cloudflareworkers.com
+api.cloudflare.com
+*.cloudflare.com (wildcard)
+*.teams.cloudflare.com
+
+# Services
+Cloudflare Pages
+Cloudflare Stream
+Cloudflare Access
+Cloudflare Zero Trust
+Cloudflare D1
+Cloudflare R2
+WARP Mobile Apps
+1.1.1.1 Resolver
+Magic Transit
+Spectrum
+Load Balancing
+Bot Management
+Area 1
+
+# Open Source
+github.com/cloudflare
+github.com/cloudflare/workerd
+CDNJS
