@@ -1,0 +1,30 @@
+=== Live Targets ===
+www.cloudflare.com: 200 - Main site, strong CSP/HSTS, well-known endpoints exposed
+blog.cloudflare.com: 200 - Blog, behind Cloudflare own CDN
+developers.cloudflare.com: 200 - Dev docs, Access-Control-Allow-Origin: *
+cloudflareworkers.com: 302 -> workers.cloudflare.com/playground
+dash.cloudflare.com: 403 - Dashboard (auth required)
+api.cloudflare.com: 301 -> API gateway
+support.cloudflare.com: 301 - Zendesk
+community.cloudflare.com: 403 - Discourse forum
+
+=== Scope Coverage ===
+In-scope targets verified accessible:
+  - dash.cloudflare.com (403 = auth required, expected)
+  - cloudflareworkers.com (redirects to playground)
+  - *.cloudflare.com (sample verified: www, blog, developers)
+  - api.cloudflare.com (API gateway)
+  - Open source tools (workerd, etc.)
+
+=== Subdomain Enumeration ===
+cloudflare.com: 15,550 subdomains found (subfinder)
+Key service targets: dash, api, www, blog, support, developers, workers
+
+=== Open Source Code Review ===
+Checked cloudflare/workerd (github.com/cloudflare/workerd)
+Daily automated releases. No recent security patches visible.
+
+=== Interesting Findings ===
+developers.cloudflare.com: Access-Control-Allow-Origin: * (CORS wildcard)
+www.cloudflare.com: Well-known endpoints exposed (.well-known/agents.json, webmcp.json, openapi.json, llms.txt)
+All targets: Strong HSTS, proper CSP, Cloudflare-protected
