@@ -1,0 +1,4 @@
+[LIVE] https://cloudflare.com -> 301
+[LIVE] https://www.cloudflare.com -> 200
+[LIVE] https://dash.cloudflare.com -> 403
+[LIVE] https://api.cloudflare.com -> 301

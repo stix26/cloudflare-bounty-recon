@@ -1,0 +1,4 @@
+[CORS] https://cloudflare.com -> no-cors-header
+[CORS] https://www.cloudflare.com -> no-cors-header
+[CORS] https://dash.cloudflare.com -> no-cors-header
+[CORS] https://api.cloudflare.com -> no-cors-header
